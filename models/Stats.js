@@ -1,0 +1,27 @@
+import mongoose from "mongoose";
+
+const { Schema } = mongoose;
+
+const statsSchema = new Schema({
+
+    users: {
+        type: Number,
+        default : 0,
+    },
+    subscription: {
+        type: Number,
+        default : 0,
+    },
+    views: {
+        type: Number,
+        default : 0,
+    },
+
+    createdAt: {
+        type: Date,
+        default: Date.now(),
+    },
+
+})
+
+export default mongoose.model("Stats", statsSchema);
