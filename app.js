@@ -11,7 +11,7 @@ config({
 const app = express();
 
 
-//using middlewares
+//using middlewares on 
 
 app.use(express.json());
 app.use(
